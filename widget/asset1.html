@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Asset Sample</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,600" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="asset.css">
+    <style>
+        body {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 24px;
+            margin: 5% 10%;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim enim nec ipsum posuere elementum. Nam ipsum lacus, ullamcorper sed consequat at, aliquam ut urna. In rutrum sapien eu libero mollis maximus. Quisque non tortor suscipit, pellentesque turpis nec, sagittis sem. Vestibulum in sem ac mauris aliquet sagittis. Mauris vitae nibh in lectus laoreet hendrerit rutrum non diam. Nunc hendrerit vel leo id dictum. Cras at purus in lectus fringilla aliquam cursus sed sem. Fusce elementum lacinia sapien eget vestibulum.
+    </p>
+    <p>
+        Nulla luctus consequat efficitur. Sed quis justo lectus. Fusce et ante commodo felis tincidunt tempus. Mauris mollis mi ac felis vulputate porta. Vivamus tincidunt ex quis tellus facilisis elementum. Duis nec enim at purus hendrerit imperdiet. Mauris vulputate nec arcu eget egestas. Integer eu dolor in nunc tempus posuere. Nam bibendum urna vel varius elementum. Phasellus odio neque, laoreet nec facilisis et, tincidunt eget risus. Sed in pharetra elit. Curabitur ac sem et nisl commodo elementum. Fusce lacinia mi elit, ut scelerisque magna pharetra et. Nunc rutrum augue sit amet risus tincidunt, in vehicula turpis fermentum. Cras magna tellus, sagittis quis dictum quis, convallis vitae mauris.
+    </p>
+    <p>
+        Donec leo nulla, faucibus at ante a, consequat ornare turpis. Curabitur vitae blandit diam, ac egestas ipsum. Sed fermentum dui ut viverra dapibus. Integer fringilla ligula quis magna faucibus, nec fermentum nulla imperdiet. Vivamus mattis auctor elit, ac vehicula mauris aliquet eget. Etiam vel nisi sodales, laoreet lectus eu, gravida eros. Curabitur vel blandit risus. Donec nec mauris mauris. Duis ullamcorper nulla massa, a ornare lorem interdum sit amet. Curabitur mattis non dui id mollis. Integer ex risus, mattis nec risus ut, bibendum tincidunt dui.
+    </p>
+
+    <div id="here-mobility-asset">
+        <div id="hm-drape">
+            <div id="hm-modal">
+                <div id="hm-content">
+                    <div id="here-mobility-widget" style="display:none">
+                        <script>
+                          (function(w,i,d,g,e,t){
+                            var h='HereMobilityWidget';w[h]=w[h]||[];w[h].push(e);if(!(e in w)){w[e]=function(o){w[e].q.push(o)};w[e].q=[{el:g}]}w[e].t=Date.now();
+                            var s=i.createElement('script');s.async=1;s.src=d+'?a='+t+'&b='+(w[e].t/864e5|0);i.querySelector('#'+g).appendChild(s);
+                          })(window,document,'https://web-widget.mobility.here.com/widget.js','here-mobility-widget','hmw','... APP_ID ...');
+                        </script>
+                    </div>
+                </div>
+                <div id="hm-handle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 1l1-1 15 15-1 1zm0 14L15 0l1 1L1 16z"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <button id="hm-btn-float" tabindex="0">
+            <span id="hm-img-hail">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 32"><path d="M42.6 17l-1.5-1-.8-5.5a2.7 2.7 0 0 0-2.6-2.6h-4.3V7a2 2 0 0 0-2-2h-1.6a2 2 0 0 0-2 2v1h-4.5a2.7 2.7 0 0 0-2.6 2.5l-.8 5.5-1.5 1a3 3 0 0 0-1.4 2.5v5.8c0 .8.7 1.5 1.5 1.5v3c0 1.2 1 2.2 2.2 2.2 1.2 0 2.1-1 2.1-2.3v-2.9h15.4v3c0 1.2 1 2.2 2.1 2.2 1.2 0 2.2-1 2.2-2.3v-2.9c.8 0 1.5-.7 1.5-1.5v-5.8a3 3 0 0 0-1.4-2.5zm-22 5.9c-1 0-1.8-.9-1.8-2 0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.9c0 1-.8 1.9-1.8 1.9zm3.5.7v-3.4c0-.5.3-.9.8-.9h11.2c.4 0 .8.4.8.9v3.4H24.1zm-1.8-7.9l.3-5.1c0-.7.6-.7 1.4-.7h13c.8 0 1.4 0 1.4.7l.3 5.1H22.3zm18 7.2c-1 0-1.7-.9-1.7-2 0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.9c0 1-.8 1.9-1.8 1.9z M6.9 0a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5 M4 5.8h5.8l8.4-2.6c1.8-.5 2.4 1.7.8 2.3l-8.4 2.9v22c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V18.8H6.3v11.6c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5V9.7h-1v8c0 1.7-2.3 1.7-2.3 0V9.6C0 7 1.6 5.8 4 5.8z"></path></svg>
+            </span>
+            <span id="hm-img-x">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 1l1-1 15 15-1 1zm0 14L15 0l1 1L1 16z"></path></svg>
+            </span>
+            <span id="hm-tooltip">
+                Book a ride
+            </span>
+        </button>
+    </div>
+    <script>
+      const docQS = document.querySelector.bind(document)
+      const toggleModal = function(className) {
+        if (typeof className === 'string') docQS('#hm-modal').className = className
+        docQS('#here-mobility-widget').style.display = 'block'
+        docQS('#here-mobility-asset').classList.toggle('hm-active')
+      }
+      docQS('#hm-handle').addEventListener('click', toggleModal)
+      docQS('#hm-btn-float').addEventListener('click', function() {toggleModal('corner')})
+    </script>
+
+    <script>
+      hmw({
+        ui: {border: false},
+        auth: {
+          app_id: '...',
+          user_id: '...',
+          request_timestamp: 1567890000,
+          hmac: '...'
+        }
+      })
+    </script>
+</body>
+</html>

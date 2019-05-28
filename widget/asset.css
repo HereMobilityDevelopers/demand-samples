@@ -1,0 +1,264 @@
+#here-mobility-asset {
+    display: inline;
+}
+
+#hm-drape {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: rgba(57, 60, 70, 0);
+    transition: background-color .2s, height 0s .2s;
+}
+
+#hm-content {
+    overflow: auto;
+    height: 100%;
+    background-color: #fff;
+}
+
+#hm-content > * {
+    position: relative;
+    z-index: 1;
+}
+
+#hm-modal {
+    position: fixed;
+    height: 0;
+    transition: height .2s;
+}
+
+#hm-modal.corner {
+    bottom: 38px;
+    right: 8px;
+    width: calc(100% - 16px);
+    max-width: 400px;
+}
+
+#hm-modal.corner > #hm-content {
+    border-radius: 20px 20px 0 20px;
+}
+
+#hm-modal.corner #hm-handle {
+    position: absolute;
+    right: 0;
+    height: 0;
+    width: 60px;
+    background-color: #fff;
+    border-top-color: transparent;
+    border-bottom-left-radius: 100% 200%;
+    border-bottom-right-radius: 100% 200%;
+    transition: height 0s .2s;
+}
+
+#hm-modal.corner #hm-handle:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    height: 30px;
+    width: 80px;
+    background-color: #fff;
+}
+
+#hm-modal.center {
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    transform: translate(-50%, -50%);
+    width: 768px;
+    max-width: calc(100% - 16px);
+    margin: 8px;
+}
+
+#hm-modal.center > #hm-content {
+    border-radius: 6px;
+}
+
+#hm-modal.center #hm-handle {
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 32px;
+    width: 32px;
+    background-color: #6a6d74;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#hm-modal.center #hm-handle svg {
+    width: 12px;
+    fill: #fff;
+}
+
+#hm-modal.corner #hm-handle svg {
+    display: none;
+}
+
+#hm-content,
+#hm-handle {
+    box-shadow: 0 0 20px rgba(51, 51, 51, .3);
+}
+
+#hm-btn-float,
+#hm-btn-still {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    color: #fff;
+    background-color: #00afaa;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#hm-btn-float svg,
+#hm-btn-still svg {
+    fill: currentColor;
+}
+
+#hm-btn-float {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    transition: all .2s;
+    box-shadow: 0 15px 20px rgba(38, 136, 100, .3);
+}
+
+#hm-btn-float #hm-img-hail,
+#hm-btn-float #hm-img-x {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: opacity .2s;
+}
+
+#hm-btn-float #hm-img-hail {
+    width: 44px;
+    opacity: 1;
+}
+
+#hm-btn-float #hm-img-x {
+    width: 18px;
+    opacity: 0;
+}
+
+#hm-btn-float #hm-tooltip {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-right: 20px;
+    transform: translateY(-50%);
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    background-color: #393c46;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+}
+
+#hm-btn-float #hm-tooltip:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    background-color: inherit;
+    border-top-right-radius: 4px;
+    transform: rotate(45deg);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+#hm-btn-float:focus #hm-tooltip,
+#hm-btn-float:hover #hm-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#hm-btn-still {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 18px 6px 12px;
+    margin: 6px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color .2s;
+}
+
+#hm-btn-still:focus,
+#hm-btn-still:hover {
+    background-color: #00908a;
+}
+
+#hm-btn-still #hm-img-taxi {
+    height: 22px;
+    width: 22px;
+    margin-right: 6px;
+}
+
+#hm-btn-still.hm-inv {
+    color: #00afaa;
+    background-color: transparent;
+}
+
+#hm-btn-still.hm-inv:focus,
+#hm-btn-still.hm-inv:hover {
+    color: #00908a;
+}
+
+.hm-active #hm-drape {
+    height: 100%;
+    background-color: rgba(57, 60, 70, .3);
+    transition: background-color .2s;
+}
+
+.hm-active #hm-modal.corner {
+    height: 565px;
+}
+
+.hm-active #hm-modal.corner #hm-handle {
+    height: 30px;
+    transition: height 0s;
+}
+
+.hm-active #hm-modal.center {
+    height: 550px;
+}
+
+.hm-active #hm-modal.center #hm-handle {
+    display: inline-flex;
+}
+
+.hm-active #hm-btn-float {
+    height: 48px;
+    width: 48px;
+    box-shadow: none;
+}
+
+.hm-active #hm-btn-float #hm-img-hail {
+    opacity: 0;
+}
+
+.hm-active #hm-btn-float #hm-img-x {
+    opacity: 1;
+}
+
+.hm-active #hm-tooltip {
+    display: none;
+}
+
+@media (min-width: 528px) {
+    .hm-active #hm-modal.center {
+        height: 450px;
+    }
+}
