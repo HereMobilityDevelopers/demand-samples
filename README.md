@@ -2,20 +2,17 @@
 
 ## Web Widget Buttons
 
-* [Demo 1](widget/asset1.html) - a button floating at the bottom right corner of the web page. Upon clicking the Widget will also open there:
-  
-  ![Floating Button](widget/images/btn_float.png "Floating Button")
 
-* [Demo 2](widget/asset2.html) - a plain button that can placed anywhere on the web page, even `inline` within other elements. The Widget itself will open in the center of the screen: 
+| Demo | Description | Live Demo | Source Code* |
+| --- | --- | --- | --- |
+| ![Floating Button](widget/images/btn_float.png "Floating Button") | A button floating at the bottom right corner of the web page. Upon clicking it, the Widget will also open there. | [Demo](https://heremobilitydevelopers.github.io/demand-samples/widget/asset1.html) | [HTML](widget/asset1.html) |
+| ![Inline Button](widget/images/btn_inline.png "Inline Button") | A plain button that can be placed anywhere on the web page, even `inline` within other elements. The Widget itself will open in the center of the screen. | [Demo](https://heremobilitydevelopers.github.io/demand-samples/widget/asset2.html) | [HMTL](widget/asset2.html) |
+| ![Inverted Inline Button](widget/images/btn_inline_inv.png "Inverted Inline Button") | A button similar to the previous one, but with inverted colors so it looks like a link. | [Demo](https://heremobilitydevelopers.github.io/demand-samples/widget/asset3.html) | [HTML](widget/asset3.html) |
 
-  ![Inline Button](widget/images/btn_inline.png "Inline Button")
-
-* [Demo 3](widget/asset3.html) - a button similar to the previous one, but with inverted colors so it looks like a link:
-
-  ![Inline Button](widget/images/btn_inline_inv.png "Inline Button")
+The 3 HTML files above refer to the same [CSS file](widget/asset.css).
 
 Note that the Widget does *not* load in any of these demos, because no authorization was made.
-The dots (...) in the HTML files need to be replaced with actual values.
+To make it work, replace the dots (...) in the HTML files with actual values.
 
 Feel free to modify these samples to fit your requirements.
 The only mandatory part is the code snippet that bootstraps the Widget and its enclosing `div` element:
