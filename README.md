@@ -1,4 +1,4 @@
-![HERE Mobility](https://mobility.here.com/sites/default/files/3-layers.png "HERE Mobility")
+![HERE Mobility](logo.png "HERE Mobility")
 # Demand Samples
 
 ## Web Widget Buttons
