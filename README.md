@@ -3,7 +3,8 @@
 
 ## Direct Widget Embedding
 
-The most straight-forward approach for having [HERE Mobility Widget](https://mobility.here.com/products/mobility-web-widget) on your web page is to include this snippet:
+The most straight-forward approach for having [HERE Mobility Widget](https://mobility.here.com/products/mobility-web-widget)
+on your web page is to include this snippet:
 
 ```html
 <div id="here-mobility-widget">
@@ -16,9 +17,13 @@ The most straight-forward approach for having [HERE Mobility Widget](https://mob
 </div>
 ```
 
-This snippet is comprised of an HTML element (the enclosing `div`) and a script which bootstraps the Widget to appear within that element.   
+This snippet is comprised of an HTML element (the enclosing `div`)
+and a script which bootstraps the Widget to appear within that element.
 
-⚠️_Note:_ `...APP_ID...` is a placeholder. You need to replace it with the [actual App ID you got from us](https://developer.mobility.here.com/products/webwidget) for the Widget to function properly.
+⚠️Note: `...APP_ID...` is a placeholder. You need to replace it with the [actual App ID you got from us](https://developer.mobility.here.com/products/webwidget) for the Widget to function properly.
+
+Here's a [demo](https://heremobilitydevelopers.github.io/demand-samples/widget/asset0.html) of the result
+(and its [source HTML](https://github.com/HereMobilityDevelopers/demand-samples/blob/master/widget/asset0.html)).   
 
 ## Widget Buttons
 

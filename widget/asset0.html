@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Asset Sample</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,600" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 24px;
+            margin: 5% 10%;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim enim nec ipsum posuere elementum. Nam ipsum lacus, ullamcorper sed consequat at, aliquam ut urna. In rutrum sapien eu libero mollis maximus. Quisque non tortor suscipit, pellentesque turpis nec, sagittis sem. Vestibulum in sem ac mauris aliquet sagittis. Mauris vitae nibh in lectus laoreet hendrerit rutrum non diam. Nunc hendrerit vel leo id dictum. Cras at purus in lectus fringilla aliquam cursus sed sem. Fusce elementum lacinia sapien eget vestibulum.
+    </p>
+
+    <div id="here-mobility-widget">
+        <script>
+          (function(w,i,d,g,e,t){
+            var h='HereMobilityWidget';w[h]=w[h]||[];w[h].push(e);if(!(e in w)){w[e]=function(o){w[e].q.push(o)};w[e].q=[{el:g,id:t}]}w[e].t=Date.now();
+            var s=i.createElement('script');s.async=1;s.src=d+'?a='+t+'&b='+(w[e].t/864e5|0);i.querySelector('#'+g).appendChild(s);
+          })(window,document,'https://web-widget.mobility.here.com/widget.js','here-mobility-widget','hmw','1O97h5w8R0F9lPaXL3kwvQwFSOI');
+        </script>
+    </div>
+
+    <script>
+      hmw({
+        center: { lat: 41.37, lng: 2.14 },
+        destination: 'Montjuïc (Barcelona Espanha)'
+      })
+    </script>
+</body>
+</html>
