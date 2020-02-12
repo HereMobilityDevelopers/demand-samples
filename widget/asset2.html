@@ -32,9 +32,9 @@
                     <div id="here-mobility-widget" style="display:none">
                         <script>
                           (function(w,i,d,g,e,t){
-                            var h='HereMobilityWidget';w[h]=w[h]||[];w[h].push(e);if(!(e in w)){w[e]=function(o){w[e].q.push(o)};w[e].q=[{el:g}]}w[e].t=Date.now();
+                            var h='HereMobilityWidget';w[h]=w[h]||[];w[h].push(e);if(!(e in w)){w[e]=function(o){w[e].q.push(o)};w[e].q=[{el:g,id:t}]}w[e].t=Date.now();
                             var s=i.createElement('script');s.async=1;s.src=d+'?a='+t+'&b='+(w[e].t/864e5|0);i.querySelector('#'+g).appendChild(s);
-                          })(window,document,'https://web-widget.mobility.here.com/widget.js','here-mobility-widget','hmw','... APP_ID ...');
+                          })(window,document,'https://web-widget.mobility.here.com/widget.js','here-mobility-widget','hmw','1O97h5w8R0F9lPaXL3kwvQwFSOI');
                         </script>
                     </div>
                 </div>
@@ -70,12 +70,8 @@
 
     <script>
       hmw({
-        auth: {
-          app_id: '...',
-          user_id: '...',
-          request_timestamp: 1567890000,
-          hmac: '...'
-        }
+        center: { lat: 41.37, lng: 2.14 },
+        destination: 'Montjuïc (Barcelona Espanha)'
       })
     </script>
 </body>
